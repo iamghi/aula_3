@@ -3,17 +3,25 @@
 <head>
     <style>
         /* Estas são as classes de css que eu criei */
+        body{
+            background-color: rgba(128, 128, 128, 0.7);
+        }
         .titulo {
             font-family: Arial, sans-serif;
             font-size: 36px;
             color: red;
             text-align: center;
+            /*background-color: aquamarine;*/
+            background: url(data:image/png;base64,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);
         }
         .subtitulo {
             font-family: Arial, sans-serif;
             font-size: 24px;
             color: red;
             text-align: center;
+            background-color: azure;
+            padding: 50px;
+            margin-top: -20px;
         }
         .paragrafo {
             font-family: Arial, sans-serif;
@@ -35,23 +43,13 @@
   /* Define a cor de fundo como cinza com 80% de opacidade */
   background-color: rgba(128, 128, 128, 0.8);
 }
-    .header {
-  /* Define a largura e a altura da header */
-  width: 100%;
-  height: 100px;
 
-  /* Use um gradiente linear para criar o efeito xadrez */
-  background: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%);
 
-  /* Ajuste o tamanho e a posição do gradiente */
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
-}
     </style>
 </head>
 <body>
- <h1 class="header titulo">Fórmula 1</h1> <!-- Esta é a tag h1 -->
-<h6 class="header subtitulo">A categoria mais rápida do automobilismo</h6> <!-- Esta é a tag h6 -->
+    <h1 class="titulo">Fórmula 1</h1> <!-- Esta é a tag h1 -->
+    <h6 class="subtitulo">A categoria mais rápida do automobilismo</h6> <!-- Esta é a tag h6 -->
     <p class="paragrafo">A Fórmula 1 é a principal categoria do automobilismo mundial, disputada desde 1950. Ela reúne os melhores pilotos, equipes e circuitos do mundo, em uma competição que envolve velocidade, tecnologia, estratégia e emoção. A temporada de 2024 terá 24 corridas, começando no Bahrein e terminando em Abu Dhabi.</p> <!-- Esta é a tag p -->
     <p class="paragrafo"><b>Os principais pilotos da Fórmula 1 em 2024 são:</b></p> <!-- Esta é a tag b -->
     <ol class="lista"> <!-- Esta é a tag ol -->
