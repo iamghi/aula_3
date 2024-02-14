@@ -1,68 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- CSS -->
+    <!-- CSS classes -->
     <style>
-    /* Classe CSS 1 */
-    .titulo {
-        font-size: 2em;
-        color: red;
-    }
-    /* Classe CSS 2 */
-    .subtitulo {
-        font-size: 1.5em;
-        color: blue;
-    }
-    /* Classe CSS 3 */
-    .corpo-texto {
-        font-size: 1em;
-        color: black;
-    }
-    /* Classe CSS 4 */
-    .link {
-        color: green;
-    }
-    /* Classe CSS 5 */
-    .imagem {
-        width: 200px;
-        height: auto;
-    }
+        body {background-color: #964B00;} /* Marrom */
+        .titulo {font-size: 24px; color: #D2691E;} /* Chocolate */
+        .subtitulo {font-size: 20px; color: #8B4513;} /* SaddleBrown */
+        .paragrafo {font-size: 16px; color: #A52A2A;} /* Marrom */
+        .negrito {font-weight: bold; color: #DEB887;} /* BurlyWood */
+        .sublinhado {text-decoration: underline; color: #F4A460;} /* SandyBrown */
     </style>
 </head>
 <body>
-    <!-- Título -->
-    <h1 class="titulo">Bem-vindo ao nosso site da Fórmula 1!</h1>
-    <hr>
+    <!-- Livraria -->
+    <div id="livraria">
+        <h1 class="titulo">Bem-vindo à nossa livraria!</h1>
+        <p class="paragrafo">Aqui você encontrará uma variedade de livros para escolher.</p>
+        <!-- Imagens dos livros -->
+        <img src="livro1.jpg" alt="Livro 1">
+        <img src="livro2.jpg" alt="Livro 2">
+        <img src="livro3.jpg" alt="Livro 3">
+        <img src="livro4.jpg" alt="Livro 4">
+        <img src="livro5.jpg" alt="Livro 5">
+        <br>
+        <hr>
+    </div>
 
-    <!-- Subtítulo -->
-    <h6 class="subtitulo">Aqui estão as últimas notícias:</h6>
-    <br>
+    <!-- Fórum -->
+    <div id="forum">
+        <h6 class="subtitulo">Fórum para leitores</h6>
+        <p class="paragrafo">Participe das discussões sobre seus livros favoritos!</p>
+        <ul>
+            <li class="negrito sublinhado">Tópico 1</li>
+            <li class="negrito sublinhado">Tópico 2</li>
+        </ul>
+        <ol>
+            <li class="negrito sublinhado">Tópico 3</li>
+            <li class="negrito sublinhado">Tópico 4</li>
+        </ol>
+        <hr>
+    </div>
 
-    <!-- Texto -->
-    <p class="corpo-texto"><b>Notícia 1:</b> <u>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</u></p>
-    <p class="corpo-texto"><b>Notícia 2:</b> <u>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</u></p>
-
-    <!-- Lista Ordenada -->
-    <ol>
-        <li class="corpo-texto">Primeiro item</li>
-        <li class="corpo-texto">Segundo item</li>
-    </ol>
-
-    <!-- Lista Não Ordenada -->
-    <ul>
-        <li class="corpo-texto">Item A</li>
-        <li class="corpo-texto">Item B</li>
-    </ul>
-
-    <!-- Imagens -->
-    <img class="imagem" src="imagem1.jpg" alt="Imagem 1">
-    <img class="imagem" src="imagem2.jpg" alt="Imagem 2">
-    <img class="imagem" src="imagem3.jpg" alt="Imagem 3">
-    <img class="imagem" src="imagem4.jpg" alt="Imagem 4">
-    <img class="imagem" src="imagem5.jpg" alt="Imagem 5">
-
-    <!-- Redirecionamentos -->
-    <a class="link" href="pagina1.html">Redirecionamento 1</a>
-    <a class="link" href="pagina2.html">Redirecionamento 2</a>
+    <!-- Botões de redirecionamento -->
+    <button onclick="document.location='livraria.html'">Ir para a livraria</button>
+    <button onclick="document.location='forum.html'">Ir para o fórum</button>
 </body>
 </html>
+ 
