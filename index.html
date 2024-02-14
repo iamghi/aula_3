@@ -3,12 +3,14 @@
 <head>
     <!-- CSS classes -->
     <style>
-        body {background-color: #964B00;} /* Marrom */
-        .titulo {font-size: 24px; color: #D2691E;} /* Chocolate */
-        .subtitulo {font-size: 20px; color: #8B4513;} /* SaddleBrown */
-        .paragrafo {font-size: 16px; color: #A52A2A;} /* Marrom */
-        .negrito {font-weight: bold; color: #DEB887;} /* BurlyWood */
-        .sublinhado {text-decoration: underline; color: #F4A460;} /* SandyBrown */
+        body {background-color: rgba(150, 75, 0, 0.5);} /* Marrom com 50% de opacidade */
+        .titulo {font-size: 24px; color: black;}
+        .subtitulo {font-size: 20px; color: black;}
+        .paragrafo {font-size: 16px; color: black;}
+        .negrito {font-weight: bold; color: black;}
+        .sublinhado {text-decoration: underline; color: black;}
+        .carousel {display: flex; overflow-x: auto; scroll-snap-type: x mandatory;}
+        .carousel img {scroll-snap-align: start; object-fit: cover; width: 100%;}
     </style>
 </head>
 <body>
@@ -16,12 +18,14 @@
     <div id="livraria">
         <h1 class="titulo">Bem-vindo à nossa livraria!</h1>
         <p class="paragrafo">Aqui você encontrará uma variedade de livros para escolher.</p>
-        <!-- Imagens dos livros -->
-        <img src="livro1.jpg" alt="Livro 1">
-        <img src="livro2.jpg" alt="Livro 2">
-        <img src="livro3.jpg" alt="Livro 3">
-        <img src="livro4.jpg" alt="Livro 4">
-        <img src="livro5.jpg" alt="Livro 5">
+        <!-- Carrossel de imagens dos livros -->
+        <div class="carousel">
+            <img src="livro1.jpg" alt="Livro 1">
+            <img src="livro2.jpg" alt="Livro 2">
+            <img src="livro3.jpg" alt="Livro 3">
+            <img src="livro4.jpg" alt="Livro 4">
+            <img src="livro5.jpg" alt="Livro 5">
+        </div>
         <br>
         <hr>
     </div>
@@ -46,4 +50,4 @@
     <button onclick="document.location='forum.html'">Ir para o fórum</button>
 </body>
 </html>
- 
+
