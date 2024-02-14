@@ -12,19 +12,28 @@
         .carousel {display: flex; overflow-x: auto; scroll-snap-type: x mandatory;}
         .carousel img {scroll-snap-align: start; object-fit: cover; width: 100%;}
         .rodape {position: fixed; left: 0; bottom: 0; width: 100%; text-align: center;}
-          /* Adicionando a nova classe para o cabeçalho */
+
+        /* Adicionando a nova classe para o cabeçalho */
         .header {
             background-color: lightgray;
             text-align: center;
             padding: 10px 0;
-            font-family: 'Comic Sans MS', cursive, sans-serif; 
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Altere para a fonte desejada */
+        }
     </style>
 </head>
+
 <body>
-    <!-- Livraria -->
-    <div id="livraria">
+    <!-- Adicionando o cabeçalho ao corpo do documento -->
+    <div class="header">
         <h1 class="titulo">Livraria Hatchara!</h1>
+    </div>
+
+    <!-- Resto do seu código HTML -->
+    <div id="livraria">
         <p class="paragrafo">Aqui você encontrará uma variedade de livros para escolher.</p>
+    </div>
+</body>
         <!-- Carrossel de imagens dos livros -->
         <div class="carousel">
             <img src="https://www.seguroviagem.org/wp-content/uploads/2015/10/the-livraria-lello-pixabay.jpg" alt="interior da livraria">
