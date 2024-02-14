@@ -4,36 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórmula 1</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Classes de CSS */
+        .titulo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333; /* Cor do título */
+        }
+        .imagem {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd; /* Borda nas imagens */
+        }
+        .destaque {
+            background-color: #f9f9f9; /* Fundo destacado */
+            padding: 10px;
+        }
+        .lista-corridas {
+            list-style-type: square; /* Marcadores quadrados */
+        }
+        .link-externo {
+            text-decoration: none; /* Remover sublinhado de links */
+            color: #0077cc; /* Cor do link */
+        }
+        /* ... outras classes ... */
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Fórmula 1</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="pilotos.html">Pilotos</a></li>
-                <li><a href="equipes.html">Equipes</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Notícias</h2>
-            <p>Confira as últimas notícias sobre a Fórmula 1.</p>
-        </section>
-        <section>
-            <h2>Calendário</h2>
-            <ol>
-                <li>Bahrain - 2 de março</li>
-                <li>Saudi Arabia - 9 de março</li>
-                <!-- ... outras corridas ... -->
-            </ol>
-        </section>
-        <!-- Mais seções aqui -->
-    </main>
-    <footer>
-        <p>© 2024 Fórmula 1. Todos os direitos reservados.</p>
-    </footer>
+    <h1 class="titulo">Fórmula 1</h1>
+    <p>Conheça a história, regras e curiosidades do maior esporte automobilístico do planeta.</p>
+    <img class="imagem" src="f1-carro.jpg" alt="Carro de Fórmula 1">
+    <img class="imagem" src="f1-piloto.jpg" alt="Piloto de Fórmula 1">
+    <img class="imagem" src="f1-podio.jpg" alt="Pódio de Fórmula 1">
+    <img class="imagem" src="f1-corrida.jpg" alt="Corrida de Fórmula 1">
+    <img class="imagem" src="f1-bandeirola.jpg" alt="Bandeirola de Fórmula 1">
+    <ul class="lista-corridas">
+        <li>Corrida 1 - Melbourne, Austrália</li>
+        <li>Corrida 2 - São Paulo, Brasil</li>
+        <!-- ... outras corridas ... -->
+    </ul>
+    <hr>
+    <h6 class="destaque">Calendário da Temporada</h6>
+    <ol class="lista-corridas">
+        <li>Corrida 1 - Melbourne, Austrália</li>
+        <li>Corrida 2 - São Paulo, Brasil</li>
+        <!-- ... outras corridas ... -->
+    </ol>
+    <br>
+    <p>Para mais informações, visite <a class="link-externo" href="https://www.redbull.com/br-pt/guia-completo-da-formula-1">Red Bull - Guia Completo da Fórmula 1</a>.</p>
+    <!-- Redirecionamentos -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://www.f1-fansite.com/pt/";
+        }, 5000); // Redirecionamento após 5 segundos
+    </script>
 </body>
 </html>
