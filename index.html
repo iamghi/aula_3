@@ -20,15 +20,28 @@
             padding: 10px 0;
             font-family: 'Times New Roman'; /*fonte da header*/
         }
+             .login-button {
+            padding: 10px 20px;
+            background-color: ##b4764f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .login-button:hover {
+            background-color: ##b4764f;
+        }
     </style>
 </head>
 
 <body>
     <!-- Adicionando o cabeçalho ao corpo do documento -->
     <div class="header">
-        <h1 class="titulo">Livraria Hatchara!</h1>
+        <h1 class="titulo">Biblioteca Hatchara</h1>
+         <!-- Botão de Login -->
+        <a href="login.html" class="login-button">Login</a>
     </div>
-
     <!-- Resto do seu código HTML -->
 <div id="livraria" style="text-align: center;">
     <p class="paragrafo">Aqui você encontrará uma variedade de livros para escolher.</p>
@@ -50,9 +63,9 @@
     <div id="forum">
         <button onclick="document.location='forum.html'">Ir para o fórum</button>
         <h6 class="subtitulo">Fórum para leitores</h6>
-        <p class="paragrafo">Participe das discussões sobre seus livros favoritos!</p>
+        <p class="paragrafo">Participe das discussões sobre seus livros favoritos!Confira abaixo os assuntos mais comentados no momento:</p>
         <ul>
-            <li class="Negrito sublinhado">Livros favoritos na infancia</li>
+            <li class="negrito sublinhado">Livros favoritos na infancia</li>
             <li class="negrito sublinhado">Livros que você não recomendaria</li>
         </ul>
         <ol>
@@ -64,17 +77,17 @@
 
     <!-- Mapa -->
     <div id="mapa">
-        <h6 class="subtitulo">Localização da Livraria</h6>
+        <h6 class="subtitulo">Localização da Biblioteca</h6>
         <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/dir//R.+Bar%C3%A3o+do+Serro+Azul,+199+-+Centro,+Curitiba+-+PR,+80020-180/@-25.4265438,-49.2708151,661m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x94dce52f63a87c6b:0x24f6488c457af6b9!2m2!1d-49.2710387!2d-25.4272782?entry=ttu"></iframe>
     </div>
 
     <!-- Botões de redirecionamento -->
-   <button onclick="document.location='https://iamghi.github.io/aula_3/'">Ir para a livraria</button>
+   <button onclick="document.location='https://iamghi.github.io/aula_3/'">Ir para o inicio do site</button>
 
 
     <!-- Rodapé -->
     <div class="rodape">
-        <p>Livraria Hatchara</p>
+        <p>Biblioteca Hatchara</p>
     </div>
 </body>
 </html>
