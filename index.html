@@ -11,13 +11,14 @@
         .sublinhado {text-decoration: underline; color: black;}
         .carousel {display: flex; overflow-x: auto; scroll-snap-type: x mandatory;}
         .carousel img {scroll-snap-align: start; object-fit: cover; width: 100%;}
+        .rodape {position: fixed; left: 0; bottom: 0; width: 100%; text-align: center;}
     </style>
 </head>
 <body>
     <!-- Livraria -->
-    <div id="livraria Hatchara">
-        <h1 class="titulo">Bem-vindo à livraria Hatchara!</h1>
-        <p class="paragrafo">Aqui você encontrará uma variedade de livros para escolher, junto de locais aconchegantes para que você possa ler e estudar, confira também nosso fórum.</p>
+    <div id="livraria">
+        <h1 class="titulo">Bem-vindo à nossa livraria!</h1>
+        <p class="paragrafo">Aqui você encontrará uma variedade de livros para escolher.</p>
         <!-- Carrossel de imagens dos livros -->
         <div class="carousel">
             <img src="https://www.seguroviagem.org/wp-content/uploads/2015/10/the-livraria-lello-pixabay.jpg" alt="interior da livraria">
@@ -45,9 +46,20 @@
         <hr>
     </div>
 
+    <!-- Mapa -->
+    <div id="mapa">
+        <h6 class="subtitulo">Localização da Livraria</h6>
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Livraria+Hatchara"></iframe>
+    </div>
+
     <!-- Botões de redirecionamento -->
     <button onclick="document.location='livraria.html'">Ir para a livraria</button>
     <button onclick="document.location='forum.html'">Ir para o fórum</button>
+
+    <!-- Rodapé -->
+    <div class="rodape">
+        <p>Livraria Hatchara</p>
+    </div>
 </body>
 </html>
 
