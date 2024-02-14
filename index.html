@@ -1,63 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórmula 1</title>
+    <!-- CSS -->
     <style>
-        /* Estilos da header */
-        header {
-            background-color: #FF0000; /* Vermelho */
-            color: #FFFFFF; /* Branco */
-            padding: 20px; /* Espaçamento interno */
-            text-align: center; /* Centralizar o conteúdo */
-        }
-        /* Classes de CSS adicionais */
-        .titulo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333; /* Cor do título */
-        }
-        .imagem {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd; /* Borda nas imagens */
-        }
-        .destaque {
-            background-color: #f9f9f9; /* Fundo destacado */
-            padding: 10px;
-        }
-        .lista-corridas {
-            list-style-type: square; /* Marcadores quadrados */
-        }
-        .link-externo {
-            text-decoration: none; /* Remover sublinhado de links */
-            color: #0077cc; /* Cor do link */
-        }
-        /* ... outras classes ... */
+    /* Classe CSS 1 */
+    .titulo {
+        font-size: 2em;
+        color: red;
+    }
+    /* Classe CSS 2 */
+    .subtitulo {
+        font-size: 1.5em;
+        color: blue;
+    }
+    /* Classe CSS 3 */
+    .corpo-texto {
+        font-size: 1em;
+        color: black;
+    }
+    /* Classe CSS 4 */
+    .link {
+        color: green;
+    }
+    /* Classe CSS 5 */
+    .imagem {
+        width: 200px;
+        height: auto;
+    }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Fórmula 1</h1>
-        <p>Conheça a história, regras e curiosidades do maior esporte automobilístico do planeta.</p>
-    </header>
-    <img class="imagem" src="f1-piloto.jpg" alt="Piloto de Fórmula 1">
-    <p class="destaque">Os pilotos de Fórmula 1 são verdadeiros heróis da velocidade, enfrentando curvas fechadas e retas alucinantes.</p>
-    <ul class="lista-corridas">
-        <li>Corrida 1 - Melbourne, Austrália</li>
-        <li>Corrida 2 - São Paulo, Brasil</li>
-        <!-- ... outras corridas ... -->
-    </ul>
+    <!-- Título -->
+    <h1 class="titulo">Bem-vindo ao nosso site da Fórmula 1!</h1>
     <hr>
-    <h6 class="destaque">Calendário da Temporada</h6>
-    <ol class="lista-corridas">
-        <li>Corrida 1 - Melbourne, Austrália</li>
-        <li>Corrida 2 - São Paulo, Brasil</li>
-        <!-- ... outras corridas ... -->
-    </ol>
+
+    <!-- Subtítulo -->
+    <h6 class="subtitulo">Aqui estão as últimas notícias:</h6>
     <br>
-    <p>Para mais informações, visite <a class="link-externo" href="https://www.redbull.com/br-pt/guia-completo-da-formula-1">Red Bull - Guia Completo da Fórmula 1</a>.</p>
+
+    <!-- Texto -->
+    <p class="corpo-texto"><b>Notícia 1:</b> <u>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</u></p>
+    <p class="corpo-texto"><b>Notícia 2:</b> <u>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</u></p>
+
+    <!-- Lista Ordenada -->
+    <ol>
+        <li class="corpo-texto">Primeiro item</li>
+        <li class="corpo-texto">Segundo item</li>
+    </ol>
+
+    <!-- Lista Não Ordenada -->
+    <ul>
+        <li class="corpo-texto">Item A</li>
+        <li class="corpo-texto">Item B</li>
+    </ul>
+
+    <!-- Imagens -->
+    <img class="imagem" src="imagem1.jpg" alt="Imagem 1">
+    <img class="imagem" src="imagem2.jpg" alt="Imagem 2">
+    <img class="imagem" src="imagem3.jpg" alt="Imagem 3">
+    <img class="imagem" src="imagem4.jpg" alt="Imagem 4">
+    <img class="imagem" src="imagem5.jpg" alt="Imagem 5">
+
     <!-- Redirecionamentos -->
+    <a class="link" href="pagina1.html">Redirecionamento 1</a>
+    <a class="link" href="pagina2.html">Redirecionamento 2</a>
 </body>
 </html>
