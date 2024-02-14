@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórmula 1</title>
     <style>
-        /* Classes de CSS */
+        /* Estilos da header */
+        header {
+            background-color: #FF0000; /* Vermelho */
+            color: #FFFFFF; /* Branco */
+            padding: 20px; /* Espaçamento interno */
+            text-align: center; /* Centralizar o conteúdo */
+        }
+        /* Classes de CSS adicionais */
         .titulo {
             font-size: 24px;
             font-weight: bold;
@@ -31,13 +38,12 @@
     </style>
 </head>
 <body>
-    <h1 class="titulo">Fórmula 1</h1>
-    <p>Conheça a história, regras e curiosidades do maior esporte automobilístico do planeta.</p>
-    <img class="imagem" src="f1-carro.jpg" alt="Carro de Fórmula 1">
+    <header>
+        <h1>Fórmula 1</h1>
+        <p>Conheça a história, regras e curiosidades do maior esporte automobilístico do planeta.</p>
+    </header>
     <img class="imagem" src="f1-piloto.jpg" alt="Piloto de Fórmula 1">
-    <img class="imagem" src="f1-podio.jpg" alt="Pódio de Fórmula 1">
-    <img class="imagem" src="f1-corrida.jpg" alt="Corrida de Fórmula 1">
-    <img class="imagem" src="f1-bandeirola.jpg" alt="Bandeirola de Fórmula 1">
+    <p class="destaque">Os pilotos de Fórmula 1 são verdadeiros heróis da velocidade, enfrentando curvas fechadas e retas alucinantes.</p>
     <ul class="lista-corridas">
         <li>Corrida 1 - Melbourne, Austrália</li>
         <li>Corrida 2 - São Paulo, Brasil</li>
@@ -53,10 +59,5 @@
     <br>
     <p>Para mais informações, visite <a class="link-externo" href="https://www.redbull.com/br-pt/guia-completo-da-formula-1">Red Bull - Guia Completo da Fórmula 1</a>.</p>
     <!-- Redirecionamentos -->
-    <script>
-        setTimeout(function() {
-            window.location.href = "https://www.f1-fansite.com/pt/";
-        }, 5000); // Redirecionamento após 5 segundos
-    </script>
 </body>
 </html>
